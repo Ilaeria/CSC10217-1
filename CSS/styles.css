@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-    background-color: #CCCCCC;
+    background-color: #CFD8DC;
     min-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -56,36 +56,44 @@ header {
 }
 
 #logobackground {
-    width: 285px;
-    height: 95px;
+    width: 280px;
+    height: 90px;
     position: absolute;
     text-align: center;
-    background-color: #FAFAFA;
+    background-color: #FF5252;
     padding: 0;
-    border-bottom: 5px solid #FF5252;
-    border-right: 5px solid #FF5252;
+    border: 5px solid #FF5252;
 }
 
 #logoshape {
-    width: 85px;
-    height: 85px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 100px solid #455A64;
+    border-bottom: 40px solid transparent;
     position: absolute;
-    background-color: #FF5252;
-    border-radius: 5px 30px;
-    margin: 5px;
+    margin-left: 175px;
+    margin-top: 5px;
 }
 
 #logotext {
-    width: 285px;
-    height: 95px;
+    width: 280px;
+    height: 90px;
     position: absolute;
+    margin-top: -45px;
+    margin-left: -275px;
+    display: table;
 }
 
 #logotext h1 {
-    padding-left: 40px;
-    color: #212121;
+    padding-left: 10px;
+    color: #FFFFFF;
     border-bottom: none;
     font-size: 1.7em;
+    text-align: left;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 img {
