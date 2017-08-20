@@ -199,12 +199,21 @@ label {
     width: 150px;
     text-align: right;
     padding-right: 10px;
-    margin-top: 10px;
 }
 
 input {
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
+}
+
+input:valid, input:in-range {
+    background: #D9F2D9;
+    border-color: #40FB40;
+}
+
+input:invalid, input:out-of-range {
+    border-color: #BF4040;
+    background: #F2D9D9;
 }
 
 textarea {
@@ -213,7 +222,14 @@ textarea {
 }
 
 select {
-    margin-top: 10px;
+    margin-top: 20px;
+    display: block;
+}
+
+.help {
+    font-size: 0.8em;
+    margin: 0.5em 0 0.5em 160px;
+    color: #757575;
     display: block;
 }
 
@@ -223,18 +239,24 @@ fieldset {
     padding-top: 10px;
 }
 
+fieldset > div {
+    margin:10px 0;
+}
+
+fieldset > div:last-child {
+    margin-bottom:0;
+}
+
 input[type=radio], input[type=checkbox] {
     display: inline;
     margin-left: 160px;
 }
 
-#submit {
-    margin-left: 160px;
-    display: inline;
-}
-
-#reset {
-    margin-left: 10px;
+input[type=submit], input[type=reset] {
+    background-color: #BDBDBD;
+    color: #212121;
+    border:1px solid #455A64;
+    font-size: 1.2em;
     display: inline;
 }
 
