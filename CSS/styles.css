@@ -107,6 +107,11 @@ figcaption a {
     text-align: center;
 }
 
+.socialicon {
+    padding: 0 10px;
+    max-width: 30px;
+}
+
 h1 {
     text-align: center;
     color: #212121;
@@ -207,15 +212,20 @@ textarea {
     display: block;
 }
 
+select {
+    margin-top: 10px;
+    display: block;
+}
+
 fieldset {
-    margin: 10px 0 10px 160px;
+    margin: 10px;
     border-style: none;
-    width: 419px;
     padding-top: 10px;
 }
 
 input[type=radio], input[type=checkbox] {
     display: inline;
+    margin-left: 160px;
 }
 
 #submit {

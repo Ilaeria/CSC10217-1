@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edge of Tomorrow DVD Rentals - Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/palette.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto">
+    <meta name="description" content="Edge of Tomorrow DVD Rentals.">
+    <script type="text/javascript">
+        function validateForm() {
+            if (document.forms[0].firstName.value == "" ) {
+                alert("First Name field cannot be empty.");
+                return false;
+            }
+
+            if (document.forms[0].lastName.value == "" ) {
+                alert("Last Name field cannot be empty.");
+                return false;
+            }
+
+            if (document.forms[0].email.value == "" ) {
+                alert("Email field cannot be empty.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo"> <!-- CSS logo definition -->
+                <div id="logobackground">
+                    <div id="logoshape">
+                        <div id="logotext">
+                            <h1>Edge of Tomorrow<br>DVD Rentals</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="leftnavigation">
+            <ul class="leftnavigationparent">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="techzone.html">TechZone</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="moviezone.html">MovieZone</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h3>Latest release</h3>
+            <img src="images/gotg2.jpg" alt="Latest release - Guardians of the Galaxy Vol. 2">
+            <p>
+                Our latest release - Guardians of the Galaxy Vol 2.
+            </p>
+            <p class="copyrightnotice">
+                Image courtesy <a href="http://www.imdb.com/title/tt3896198/mediaviewer/rm911094272">imdb.com</a>
+            </p>
+        </aside>
+
+        <main>
+            <h1>Join Us</h1>
+            <form name="eshopsignup" method="post" id="eshopsignup" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm();">
+                <p>
+                    Welcome to Edge of Tomorrow DVD Rentals and thanks for your interest in our e-shop! To sign up, we need a few details from you.
+                </p>
+                <fieldset id="fieldsetbasicinfo">
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" name="lastname" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="lastname" aria-required="true" aria-describedby="name-format" maxlength="50">
+                    <label for="othernames">Other Names:</label>
+                    <input id="othernames" name="othernames" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="othernames" aria-required="true" aria-describedby="name-format" maxlength="60">
+                    <label for="occupation">Occupation:</label>
+                    <select name="occupation" id="occupation" required aria-required="true" title="occupation">
+                        <option value="other">Arts and Entertainment</option>
+                        <option value="other">Business</option>
+                        <option value="other">Industrial and Manufacturing</option>
+                        <option value="other">Law Enforcement and Armed Forces</option>
+                        <option value="other">Science and Technology</option>
+                        <option value="other">Healthcare and Medicine</option>
+                        <option value="other">No Occupation</option>
+                        <option value="other">Student</option>
+                        <option value="other">Retired</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset id="fieldsetcommunicationmethod">
+                    Please choose your preferred communication method and provide us with your contact details.<br>
+                    <input type="radio" name="communicationmethod" id="communicationemail" value="email" checked> Email<br>
+                    <input type="radio" name="communicationmethod" id="communicationphone" value="phone"> Daytime phone<br>
+                    <input type="radio" name="communicationmedhod" id="communicationmobile" value="mobile"> Mobile phone<br>
+                </fieldset>
+                <fieldset id="fieldsetcontactinfo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="" required aria-required="true">
+                    <label for="phone">Daytime phone:</label>
+                    <input type="tel" id="phone" name="phone" value="" required aria-required="true">
+                    <label for="mobile">Mobile phone:</label>
+                    <input type="tel" id="mobile" name="mobile" value="" required aria-required="true">
+                </fieldset>
+                <fieldset id="fieldsetmagazine">
+                    Would you like to receive our monthly magazine?<br>
+                    <input type="checkbox" name="magazinesubscription" id="magazinesubscription" value="yes" checked> Yes, please mail me the monthly magazine<br>
+                    <label for="street">Street address:</label>
+                    <input id="street" name="street" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="street" aria-required="true" aria-describedby="street-format" maxlength="50">
+                    <label for="state">Suburb and state:</label>
+                    <input id="state" name="state" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="state" aria-required="true" aria-describedby="state-format" maxlength="50">
+                    <label for="postcode">Postcode:</label>
+                    <input type="number" id="postcode" name="postcode" value="" required title="state" aria-required="true" aria-describedby="state-format" maxlength="4">
+                </fieldset>
+                <fieldset id="fieldsetlogindetails">
+                    Please choose a username and password.<br>
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="username" aria-required="true" aria-describedby="username-format" maxlength="10" minlength="6">
+                    <label for="password1">Password:</label>
+                    <input type="password" id="password1" name="password1" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="password1" aria-required="true" aria-describedby="password-format" minlength="10">
+                    <label for="password2">Re-enter password:</label>
+                    <input type="password" id="password2" name="password2" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="password2" aria-required="true" aria-describedby="password-format" minlength="10">
+                </fieldset>
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset" name="reset" id="reset" value="Reset">
+            </form>
+        </main>
+
+        <footer>
+            <nav id="bottomnavigation">
+                <a href="index.html">Home</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="techzone.html">TechZone</a> |
+                <a href="join.html">Join</a> |
+                <a href="moviezone.html">MovieZone</a><br>
+            </nav>
+            <div id="contact">
+                <h1>Contact Us</h1>
+                    <img src="images/facebook-logo.png" alt="Follow us on Facebook" class="socialicon">
+                    <img src="images/instagram-logo.png" alt="Follow us on Instagram" class="socialicon">
+                    <img src="images/twitter-logo.png" alt="Follow us on Twitter" class="socialicon">
+                    <ul id="contactdetails">
+                        <li>Email: <a href="mailto:jdoher10@gmail.com">contact@edgeoftomorrowdvdrentals.com</a></li>
+                        <li>Website: <a href="http://infotech.scu.edu.au/~jdoher10/" target="_blank">http://infotech.scu.edu.au/~jdoher10/</a></li>
+                    </ul>
+            </div>
+            <p class="copyrightnotice">
+                All content &copy; 2017 Jennifer Doherty except as noted. DISCLAIMER: This website is for educational purposes only. All copyrighted content belongs to the copyright owners.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
