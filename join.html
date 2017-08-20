@@ -7,26 +7,6 @@
     <link rel="stylesheet" href="css/palette.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto">
     <meta name="description" content="Edge of Tomorrow DVD Rentals.">
-    <script type="text/javascript">
-        function validateForm() {
-            if (document.forms[0].firstName.value == "" ) {
-                alert("First Name field cannot be empty.");
-                return false;
-            }
-
-            if (document.forms[0].lastName.value == "" ) {
-                alert("Last Name field cannot be empty.");
-                return false;
-            }
-
-            if (document.forms[0].email.value == "" ) {
-                alert("Email field cannot be empty.");
-                return false;
-            }
-
-            return true;
-        }
-    </script>
 </head>
 
 <body>
@@ -73,12 +53,12 @@
                 <fieldset id="fieldsetbasicinfo">
                     <div>
                         <label for="lastname">Last Name:</label>
-                        <input id="lastname" name="lastname" value="" required pattern="[A-Za-z-']+\s[A-Za-z-']" title="lastname" aria-required="true" aria-describedby="lastname-format" maxlength="50">
+                        <input id="lastname" name="lastname" value="" required pattern="[A-Za-z-'\s]+" title="lastname" aria-required="true" aria-describedby="lastname-format" maxlength="50">
                         <span id="lastname-format" class="help">Required field. Letters, spaces, - or ' only. Max 50 characters.</span>
                     </div>
                     <div>
                         <label for="othernames">Other Names:</label>
-                        <input id="othernames" name="othernames" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="othernames" aria-required="true" aria-describedby="othernames-format" maxlength="60">
+                        <input id="othernames" name="othernames" value="" required pattern="[A-Za-z-'\s]+" title="othernames" aria-required="true" aria-describedby="othernames-format" maxlength="60">
                         <span id="othernames-format" class="help">Required field. Letters, spaces, - or ' only. Max 60 characters.</span>
                     </div>
                     <div>
@@ -114,12 +94,12 @@
                     </div>
                     <div>
                         <label for="phone">Daytime phone:</label>
-                        <input type="tel" id="phone" name="phone" value="" required aria-required="true" aria-describedby="phone-format">
+                        <input type="tel" id="phone" name="phone" value="" required pattern="[(]{1}[0]{1}[2-36-9]{1}[)]{1}\s[0-9]{8}"aria-required="true" aria-describedby="phone-format">
                         <span id="phone-format" class="help">Required if communication method is daytime phone. Format: (0[2,3,6,7,8,or 9]) XXXXXXXX where X is a digit.</span>
                     </div>
                     <div>
                         <label for="mobile">Mobile phone:</label>
-                        <input type="tel" id="mobile" name="mobile" value="" required aria-required="true" aria-describedby="mobile-format">
+                        <input type="tel" id="mobile" name="mobile" value="" required pattern="[0]{1}[4-5]{1}[0-9]{2}\s[0-9]{3}\s[0-9]{3}" aria-required="true" aria-describedby="mobile-format">
                         <span id="mobile-format" class="help">Required if communication method is mobile phone. Format: 0[4 or 5]XX XXX XXX where X is a digit.</span>
                     </div>
                 </fieldset>
@@ -130,17 +110,17 @@
                      </div>
                     <div>
                         <label for="street">Street address:</label>
-                        <input id="street" name="street" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="street" aria-required="true" aria-describedby="street-format" maxlength="50">
+                        <input id="street" name="street" value="" required title="street" aria-required="true" aria-describedby="street-format" maxlength="50">
                         <span id="street-format" class="help">Required for magazine delivery. Street number and name. Max 50 characters.</span>
                     </div>
                     <div>
                         <label for="state">Suburb and state:</label>
-                        <input id="state" name="state" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="state" aria-required="true" aria-describedby="state-format" maxlength="50">
+                        <input id="state" name="state" value="" required title="state" aria-required="true" aria-describedby="state-format" maxlength="50">
                         <span id="state-format" class="help">Required for magazine delivery. Suburb and State. Max 50 characters.</span>
                     </div>
                     <div>
                         <label for="postcode">Postcode:</label>
-                        <input type="number" id="postcode" name="postcode" value="" required title="state" aria-required="true" aria-describedby="postcode-format" maxlength="4">
+                        <input id="postcode" name="postcode" value="" required pattern="[0-9]{4}" title="postcode" aria-required="true" aria-describedby="postcode-format" minlength="4" maxlength="4">
                         <span id="postcode-format" class="help">Required for magazine delivery. Postcode. 4 digits only.</span>
                     </div>
                 </fieldset>
@@ -148,20 +128,21 @@
                     Please choose a username and password.<br>
                     <div>
                         <label for="username">Username:</label>
-                        <input id="username" name="username" value="" required pattern="[A-Za-z0-9]" title="username" aria-required="true" aria-describedby="username-format" maxlength="10" minlength="6">
+                        <input id="username" name="username" value="" required pattern="[A-Za-z]+" title="username" aria-required="true" aria-describedby="username-format" maxlength="10" minlength="6">
                         <span id="username-format" class="help">Required field. 6-10 characters only, no spaces.</span>
                     </div>
                     <div>
                         <label for="password1">Password:</label>
-                        <input type="password" id="password1" name="password1" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="password1" aria-required="true" aria-describedby="password1-format" maxlength="10">
+                        <input type="password" id="password1" name="password1" value="" required pattern="\S{4,}" title="password1" aria-required="true" aria-describedby="password1-format" minlength="4" maxlength="10">
                         <span id="password1-format" class="help">Required field. Must include 1 uppercase, 1 lowercase, 1 number, 1 symbol, no spaces. Max 10 characters.</span>
                     </div>
                      <div>
                         <label for="password2">Re-enter password:</label>
-                        <input type="password" id="password2" name="password2" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="password2" aria-required="true" aria-describedby="password2-format" maxlength="10">
+                        <input type="password" id="password2" name="password2" value="" required pattern="\S{4,}" title="password2" aria-required="true" aria-describedby="password2-format" minlength="4" maxlength="10">
                          <span id="password2-format" class="help">Required field. Must match first password above.</span>
                      </div>
                 </fieldset>
+                <input name="joindate" id="joindate" style="display:none">
                 <input type="submit" name="submit" id="submit" value="Submit" style="margin-left: 180px">
                 <input type="reset" name="reset" id="reset" value="Reset" style="margin-left: 10px">
             </form>
@@ -193,4 +174,28 @@
     </div>
 
 </body>
+<script type="text/javascript">
+    function validateForm() {
+        if (document.forms[0].firstName.value == "" ) {
+            alert("First Name field cannot be empty.");
+            return false;
+        }
+
+        if (document.forms[0].lastName.value == "" ) {
+            alert("Last Name field cannot be empty.");
+            return false;
+        }
+
+        if (document.forms[0].email.value == "" ) {
+            alert("Email field cannot be empty.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<script>
+    var today = (new Date()).toISOString().substring(0, 10);
+    document.getElementById("joindate").value = today;
+</script>
 </html>
