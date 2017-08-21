@@ -166,30 +166,6 @@ aside h3 {
     background-color: #FF5252;
 }
 
-.contacttable {
-    width: 90%;
-    margin-left: 0;
-    border-left: 5px solid #FF5252;
-}
-
-.contacttable caption {
-    text-align: left;
-    padding-bottom: 1em;
-}
-
-.contacttable th {
-    display: none;
-}
-
-.contacttable tbody td:first-of-type {
-    padding: 1px 5px;
-    width: 83px;
-}
-
-.contacttable tbody td:last-of-type {
-    font-size: 0.8em;
-}
-
 form {
     padding: 10px;
 }

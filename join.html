@@ -174,28 +174,9 @@
     </div>
 
 </body>
-<script type="text/javascript">
-    function validateForm() {
-        if (document.forms[0].firstName.value == "" ) {
-            alert("First Name field cannot be empty.");
-            return false;
-        }
-
-        if (document.forms[0].lastName.value == "" ) {
-            alert("Last Name field cannot be empty.");
-            return false;
-        }
-
-        if (document.forms[0].email.value == "" ) {
-            alert("Email field cannot be empty.");
-            return false;
-        }
-
-        return true;
-    }
-</script>
 <script>
     var today = (new Date()).toISOString().substring(0, 10);
     document.getElementById("joindate").value = today;
 </script>
+<script src="js/joinvalidation.js"></script>
 </html>
