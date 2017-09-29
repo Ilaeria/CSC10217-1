@@ -158,11 +158,11 @@ aside h3 {
     text-indent: 30px;
 }
 
-#leftnavigation a:link, #leftnavigation a:visited, #leftnavigation a:hover {
+#leftnavigation a:link, #leftnavigation a:visited, #leftnavigation a:hover, #leftnavigation a.currentpage {
     color: #FFFFFF;
 }
 
-#leftnavigation a:hover {
+#leftnavigation a:hover, #leftnavigation a.currentpage {
     background-color: #FF5252;
 }
 

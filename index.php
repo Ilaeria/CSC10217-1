@@ -25,11 +25,11 @@
 
         <nav id="leftnavigation">
             <ul class="leftnavigationparent">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="techzone.html">TechZone</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="moviezone.html">MovieZone</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="techzone.php">TechZone</a></li>
+                <li><a href="join.php">Join</a></li>
+                <li><a href="moviezone.php">MovieZone</a></li>
             </ul>
         </nav>
 
@@ -45,19 +45,19 @@
         </aside>
 
         <main>
-            <h1>MovieZone</h1>
+            <h1>Edge of Tomorrow DVD Rentals</h1>
                 <p>
-                    This page is under construction! Please come back later!
+                    Welcome to Edge of Tomorrow DVD Rentals - bringing you the latest DVD rentals! Our website is currently under construction, please check back later for more!
                 </p>
         </main>
 
         <footer>
             <nav id="bottomnavigation">
-                <a href="index.html">Home</a> |
-                <a href="contact.html">Contact</a> |
-                <a href="techzone.html">TechZone</a> |
-                <a href="join.html">Join</a> |
-                <a href="moviezone.html">MovieZone</a><br>
+                <a href="index.php">Home</a> |
+                <a href="contact.php">Contact</a> |
+                <a href="techzone.php">TechZone</a> |
+                <a href="join.php">Join</a> |
+                <a href="moviezone.php">MovieZone</a><br>
             </nav>
             <div id="contact">
                 <h1>Contact Us</h1>
