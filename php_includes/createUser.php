@@ -13,17 +13,20 @@ function createUser($formdata){
     // if field is empty = "" (an empty string)
     // null for $member_id as the is key auto_increment
     $member_id = null; 
-    $surname = $formdata['surname'];
-    $other_name = $formdata['othername'];
-    $contactmethod = $formdata['contactmethod'];
+    $surname = $formdata['lastname'];
+    $other_name = $formdata['othernames'];
+    $contactmethod = $formdata['communicationmethod'];
     $email = $formdata['email'];
-    $mobilenum = $formdata['mobilenum'];
-    $phonenum = $formdata['phonenum'];
+    $mobilenum = $formdata['mobile'];
+    $phonenum = $formdata['phone'];
     $occupation = $formdata['occupation'];    
-    $joinusername = $formdata['joinusername'];
-    $userpass = $formdata['userpass'];
+    $joinusername = $formdata['username'];
+    $userpass = $formdata['password1'];
+    $streetaddr = $formdata['street'];
+    $suburbstate = $formdata['state'];
+    $postcode = $formdata['postcode'];
     $joindate = date("Y-m-d"); // used server date this time not client
-    if(!isset($formdata['magazine']))
+    if(!isset($formdata['magazinesubscription']))
        $magazine = 0;
     else
        $magazine = 1;

@@ -5,26 +5,22 @@ function communicationChange(event){
     var email = document.getElementById("email");
 
     //Remove all required attributes
+    phone.className = phone.classList.remove("required");
+    mobile.className = mobile.classList.remove("required");
+    email.className = email.classList.remove("required");
     phone.required = false;
     phone.setAttribute("aria-required", "false");
-    mobile.required = false;
-    mobile.setAttribute("aria-required", "false");
-    email.required = false;
-    email.setAttribute("aria-required", "false");
 
     //Show required attributes in right elements
     switch (event.currentTarget.value) {
         case "phone":
-            phone.required = true;
-            phone.setAttribute("aria-required", "true");
+            phone.classList.add("required");
             break;
         case "mobile":
-            mobile.required = true;
-            mobile.setAttribute("aria-required", "true");
+            mobile.classList.add("required");
             break;
         case "email":
-            email.required = true;
-            email.setAttribute("aria-required", "true");
+            email.classList.add("required");
             break;
     }
 }
@@ -36,20 +32,14 @@ function magazineChange(event){
 
     if(event.currentTarget.checked == true){
         //Mark address fields as compulsory
-        street.required = true;
-        street.setAttribute("aria-required", "true");
-        state.required = true;
-        state.setAttribute("aria-required", "true");
-        postcode.required = true;
-        postcode.setAttribute("aria-required", "true");
+        street.classList.add("required");
+        state.classList.add("required");
+        postcode.classList.add("required");
     }
     else {
         //Unmark address fields as compulsory
-        street.required = false;
-        street.setAttribute("aria-required", "false");
-        state.required = false;
-        state.setAttribute("aria-required", "false");
-        postcode.required = false;
-        postcode.setAttribute("aria-required", "false");
+        street.classList.remove("required");
+        state.classList.remove("required");
+        postcode.classList.remove("required");
     }
 }

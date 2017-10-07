@@ -24,7 +24,7 @@ function validateUserForm ($formdata) { // for join.php
             the correct format for your number.<br> 
             Use the back button on your browser to correct this error.</div>";
    }         
-   else if(!validateLand($formdata)) {
+   else if(!validatePhone($formdata)) {
       print "<div class = \"centre\">Error in \"Contact Details - Landline\" you have not provided 
             the correct format for your number.<br> 
             Use the back button on your browser to correct this error.</div>";

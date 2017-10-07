@@ -182,14 +182,14 @@ input {
     display: block;
 }
 
-input:valid, input:in-range {
+.required {
     background: #D9F2D9;
     border-color: #40FB40;
 }
 
-input:invalid, input:out-of-range {
-    border-color: #BF4040;
-    background: #F2D9D9;
+.infomessage {
+    font-weight: bold;
+    color: #BF4040;
 }
 
 textarea {

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/palette.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto">
     <meta name="description" content="Edge of Tomorrow DVD Rentals.">
+    <script src="js/validation.js"></script>
 </head>
 <body>
     <div id="container">
@@ -30,10 +31,10 @@
 
                 //TODO: Remove debug
                 //For DEBUG
-                //print "<h2>POST result</h2>";
-                //$formdata = $_POST;
-                //foreach ($formdata as $element => $value)
-                //print "$element : $value <br />\n";
+                print "<h2>POST result</h2>";
+                $formdata = $_POST;
+                foreach ($formdata as $element => $value)
+                print "$element : $value <br />\n";
 
                 print "<h2>Status</h2>";
                 include_once 'php_includes/validateUser.php';
@@ -63,5 +64,4 @@
     var today = (new Date()).toISOString().substring(0, 10);
     document.getElementById("joindate").value = today;
 </script>
-<script src="js/validation.js"></script>
 </html>
