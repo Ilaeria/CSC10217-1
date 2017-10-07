@@ -28,14 +28,6 @@
         <main>
             <?php
             if(isset($_POST['submit'])){
-
-                //TODO: Remove debug
-                //For DEBUG
-                print "<h2>POST result</h2>";
-                $formdata = $_POST;
-                foreach ($formdata as $element => $value)
-                print "$element : $value <br />\n";
-
                 print "<h2>Status</h2>";
                 include_once 'php_includes/validateUser.php';
                 if(ValidateUserForm($_POST)) {
