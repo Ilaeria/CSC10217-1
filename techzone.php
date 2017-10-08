@@ -18,7 +18,7 @@
             text-align: center;
         }
 
-        .blog h3 {
+        .blog h3, h4 {
             border-left: 3px solid #BDBDBD;
         }
 
@@ -30,7 +30,7 @@
             max-width: 500px;
         }
         .blogDetail {
-            text-decoration: italic;
+            font-style: italic;
         }
     </style>
 </head>
@@ -152,7 +152,7 @@
                 <p>
                     Having an attractive website that creates a great first impression for potential customers is critical for any modern business (Keller 2017). While the most popular CMS options are nominally free, hosting and maintenance costs can be significant. WordPress continues to be a popular and viable option, but there may be better options depending on your needs. Designers and artists may want to choose a specialist portfolio CMS such as Squarespace, while ecommerce businesses may consider a specialist ecommerce CMS such as Magento. Ultimately, you need to consider your business needs before making this crucial decision. Choosing the right CMS for your needs can help your business grow.
                 </p>
-                <p style="color:#757575">Word count: ####</p>
+                <p style="color:#757575">Word count: 1200</p>
                 <div>
                     <h3>Bibliography</h3>
                     BuildMyWeb 2015, <i>The disadvantages of content management systems (CMS)</i>, Viewed 8 October 2017, <a href="http://buildmyweb.org/blog/the-disadvantages-of-content-management-systems-cms/" target="_blank">&lt;http://buildmyweb.org/blog/the-disadvantages-of-content-management-systems-cms/&gt;</a>.<br>
