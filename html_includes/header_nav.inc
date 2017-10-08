@@ -12,10 +12,10 @@
 
 <nav id="leftnavigation">
    <ul class="leftnavigationparent">
-      <li><a id="indexNav" href="index.html">Home</a></li>
-      <li><a id="contactNav" href="contact.html">Contact</a></li>
-      <li><a id="techzoneNav" href="techzone.html">TechZone</a></li>
+      <li><a id="indexNav" href="index.php">Home</a></li>
+      <li><a id="contactNav" href="contact.php">Contact</a></li>
+      <li><a id="techzoneNav" href="techzone.php">TechZone</a></li>
       <li><a id="joinNav" href="join.php">Join</a></li>
-      <li><a id="moviezoneNav" href="moviezone.html">MovieZone</a></li>
+      <li><a id="moviezoneNav" href="moviezone.php">MovieZone</a></li>
    </ul>
 </nav>
