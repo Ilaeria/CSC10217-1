@@ -29,6 +29,9 @@
         .blog img {
             max-width: 500px;
         }
+        .blogDetail {
+            text-decoration: italic;
+        }
     </style>
 </head>
 <body>
@@ -49,11 +52,130 @@
                 <p>
                     Welcome to the TechZone! Our resident TechZone rep Jennifer is here to help you with regular tech advice columns.
                 </p>
+            <div class="blog">
+                <h2>What CMS does your business need?</h2>
+                <p class="blogDetail">Author: Jennifer Doherty<br>Date: 8 October 2017</p>
                 <p>
-                    In this installment, we look at web server options, with a particular focus on IIS vs. Apache.
+                    Now that you've decided on your technology stack, the next major decision you need to make for your business is your content management system, or CMS. A CMS is a tool used to manage web content and allows you to create, manage, distribute, and publish your content (Robertson 2003).
                 </p>
+                <h3>Advantages</h3>
+                <p>
+                    There are several advantages (Enginess 2013) in using a CMS:
+                </p>
+                <ul>
+                    <li>You don't have to be technical</li>
+                    <li>Multiple people can collaborate</li>
+                    <li>It can help with scheduling</li>
+                    <li>It's easier to maintain your site</li>
+                    <li>Making changes to your site design is easy</li>
+                    <li>It helps manage content, for example, seasonal content</li>
+                    <li>You are in control of your website</li>
+                </ul>
+                <h3>Disadvantages</h3>
+                <p>
+                    Of course, there are also some disadvantages (BuildMyWeb 2015) in using a CMS:
+                </p>
+                <ul>
+                    <li>Their simplicity means that everyone is an "expert" without real technical skill</li>
+                    <li>Dynamic content means slower page loads</li>
+                    <li>They are a security risk due to their open-source nature</li>
+                    <li>Hosting costs are more expensive</li>
+                    <li>They constantly need updates</li>
+                    <li>You might be paying for features you don't need</li>
+                    <li>They are subject to "code bloat" (unnecessary code that degrades site performance)</li>
+                    <li>Their templates are attractive and tempting but can look unprofessional</li>
+                    <li>There is a learning curve even for the simplest CMS</li>
+                </ul>
+                <h3>Usage trends</h3>
+                <p>
+                    The number of websites that use some form of CMS is steadily growing, to nearly 50% of all websites at the time of writing (W3Techs 2017a). Only 51.7% of websites use no CMS at all. Of the sites that use a CMS, by far the most popular is WordPress, with 59.6% market share as at October 2017 (W3Techs 2017b). Joomla and Drupal are the next most popular, but they are lagging far behind, with just 6.7% and 4.7% respectively. After that, there are a few other CMS options with less than 3% market share, such as Magento, Shopify, Wix, and Squarespace.
+                </p>
+                <p>
+                    Each of the top three options are free (Mening 2017). Some of the less popular options such as Squarespace require payment (Squarespace 2017b).
+                </p>
+                <h3>Closer look: WordPress</h3>
+                <p>
+                    As you can see from the statistics above, WordPress is by far the most popular CMS option. It's popular because it's easy to use, and is a good choice for blogs or small e-commerce stores (Mening 2017). WordPress was released in 2003, and 75 million websites are run on WordPress (Make A Website Hub 2017). WordPress originally started as a blogging system, but now offers far more flexibility and has extensive community support. It's also great for SEO.
+                </p>
+                <p>
+                    Being the most popular, WordPress unfortunately is also the most vulnerable to hackers. Security can be a problem for WordPress based sites, and it's important you are careful, especially with the use of third-party plugins (Make A Website Hub 2017).
+                </p>
+                <p>
+                    Notable websites running on WordPress include Mashable, Time, and CNN (Make A Website Hub 2017).
+                </p>
+                <h3>Closer look: Joomla</h3>
+                <p>
+                    Joomla is a good choice for social networking sites or e-commerce stores, but requires a little more technical knowledge than WordPress (Mening 2017). Joomla was released in 2003, and 2.8 million websites are run on Joomla (Make A Website Hub 2017). Joomla is the best of the top three for managing large numbers of articles or complex website structures.
+                </p>
+                <p>
+                    Joomla has the least number of plugins of the top three options, although there is still a good variety. Also, there can be issues with plugins conflicting with each other (Make A Website Hub 2017)
+                </p>
+                <p>
+                    Notable websites running on Joomla include IKEA, MacDonald's, and Linux (Make A Website Hub 2017).
+                </p>
+                <h3>Closer look: Drupal</h3>
+                <p>
+                    Drupal is the most powerful option of the top three, but requires a working knowledge of HTML, CSS, and PHP to get the most out of it (Mening 2017). Drupal was released in 2001, and 1.1 million websites are run on Drupal (Make A Website Hub 2017). Drupal is popular with enterprise businesses and is good for advanced or complex sites, sites with complex data, or online stores. It is very scalable and versatile.
+                </p>
+                <p>
+                    However, Drupal's complexity means that it has a steep learning curve, and you may need a developer to help you support your website. It may also be more difficult to find a Drupal developer than a WordPress or Joomla developer (Make A Website Hub 2017).
+                </p>
+                <p>
+                    Notable websites running on Drupal include NBC (Make A Website Hub 2017), Entertainment Weekly (Wendel 2015), and The Economist (Drupal 2017).
+                </p>
+                <h3>Closer look: Other options</h3>
+                <h4>Portfolios and beautiful websites</h4>
+                <p>
+                    Wix is an extremely simple CMS that's even easier to use than WordPress, and comes with hosting (Newcomer 2017). However, because of the integration with their own hosting solution, you can never move your website to another hosting company. Wix does offer a free option that doesn't include your own domain name: you need a paid plan to use your own domain (Wix.com 2017). For a hobbyist, this may not be critical, but a small business without their own custom domain looks unprofessional. While it's possible to create a beautiful website with Wix (WinningWP 2016), Wix don't have an obvious list of significant customers on their homepage.
+                </p>
+                <p>
+                    Squarespace is another very simple CMS that particularly promotes their award-winning templates as a point of difference (Squarespace 2017a). They target artists and designers and other professionals who need portfolios. As with Wix, your site is hosted through Squarespace, so you can't move it easily and are vulnerable if the company stops operating (Newcomer 2017). Squarespace is used by some beautiful websites, such as Pixar and Rodarte, and they highlight this fact on their home page (Squarespace 2017a).
+                </p>
+                <h4>Ecommerce websites</h4>
+                <p>
+                    Shopify is a software-as-a-service (SAAS) CMS (Gearinger 2016) similar to Wix and Squarespace with a focus on ecommerce stores. It's used by sites like Tesla and many small or mid-sized businesses. Shopify charges transaction fees for payments made outside of their own payment gateway, which can be significant. However, Shopify is easy for non-technical users to set up and use, so for small and simple websites it can be cheap to get started and to maintain.
+                </p>
+                <p>
+                    Magento is a popular ecommerce platform that is open-source and therefore flexible and modifiable (Gearinger 2016). It's used by some significant sites like Nike and Rosetta Stone. It does need a hosting solution, but not being tied to a proprietary hosting solution offers more flexibility. This also means Magento is scalable.
+                </p>
+                <h3>Factors to consider</h3>
+                <p>
+                    From the sections above, it's clear there are a few factors to consider when choosing the CMS that's right for your business:
+                </p>
+                <ul>
+                    <li>How extensive are your technical skills?</li>
+                    <li>What is the main purpose of the website?</li>
+                    <li>What is your budget (remember to consider both setup and maintenance costs)?</li>
+                    <li>How critical is your web presence?</li>
+                </ul>
+                <h3>Conclusion</h3>
+                <p>
+                    Having an attractive website that creates a great first impression for potential customers is critical for any modern business (Keller 2017). While the most popular CMS options are nominally free, hosting and maintenance costs can be significant. WordPress continues to be a popular and viable option, but there may be better options depending on your needs. Designers and artists may want to choose a specialist portfolio CMS such as Squarespace, while ecommerce businesses may consider a specialist ecommerce CMS such as Magento. Ultimately, you need to consider your business needs before making this crucial decision. Choosing the right CMS for your needs can help your business grow.
+                </p>
+                <p style="color:#757575">Word count: ####</p>
+                <div>
+                    <h3>Bibliography</h3>
+                    BuildMyWeb 2015, <i>The disadvantages of content management systems (CMS)</i>, Viewed 8 October 2017, <a href="http://buildmyweb.org/blog/the-disadvantages-of-content-management-systems-cms/" target="_blank">&lt;http://buildmyweb.org/blog/the-disadvantages-of-content-management-systems-cms/&gt;</a>.<br>
+                    Drupal 2017, <i>Who uses Drupal?</i>, Viewed 8 October 2017, <a href="https://www.drupal.com/showcases/" target="_blank">&lt;https://www.drupal.com/showcases/&gt;</a>.<br>
+                    Enginess 2013, <i>7 advantages of using a CMS to run your site</i>, Viewed 8 October 2017, <a href="http://enginess.io/insights/7-advantages-using-cms-run-site/" target="_blank">&lt;http://enginess.io/insights/7-advantages-using-cms-run-site/&gt;</a>.<br>
+                    Gearinger, R 2016, <i>Magento 2 vs. Shopify: Which should you choose?</i>, Viewed 8 October 2017, <a href="https://www.cminds.com/magento-2-vs-shopify-choose/" target="_blank">&lt;https://www.cminds.com/magento-2-vs-shopify-choose/&gt;</a>.<br>
+                    Keller, K 2017, <i>CMS battle for beginners: WordPress vs Joomla vs Drupal</i>, Viewed 8 October 2017, <a href="https://www.entrepreneur.com/article/290613/" target="_blank">&lt;https://www.entrepreneur.com/article/290613/&gt;</a>.<br>
+                    Make A Website Hub 2017, <i>Best content management system 2017 - WordPress vs Joomla vs Drupal</i>, Viewed 8 October 2017, <a href="https://makeawebsitehub.com/content-management-system-cms-comparison/" target="_blank">&lt;https://makeawebsitehub.com/content-management-system-cms-comparison/&gt;</a>.<br>
+                    Mening, R 2017, <i>WordPress vs Joomla vs Drupal</i>, Viewed 8 October 2017, <a href="https://websitesetup.org/cms-comparison-wordpress-vs-joomla-drupal/" target="_blank">&lt;https://websitesetup.org/cms-comparison-wordpress-vs-joomla-drupal/&gt;</a>.<br>
+                    Newcomer, C 2017, <i>WordPress alternatives: 8 competitors worth checking out in 2017</i>, Viewed 8 October 2017, <a href="https://createandcode.com/wordpress-alternatives/" target="_blank">&lt;https://createandcode.com/wordpress-alternatives/&gt;</a>.<br>
+                    Robertson, J 2003, <i>So, what is a CMS?</i>, Viewed 8 October 2017, <a href="http://www.steptwo.com.au/papers/kmc_what/" target="_blank">&lt;http://www.steptwo.com.au/papers/kmc_what/&gt;</a>.<br>
+                    Squarespace 2017a, <i>Make your own website</i>, Viewed 8 October 2017, <a href="https://www.squarespace.com/" target="_blank">&lt;https://www.squarespace.com/&gt;</a>.<br>
+                    Squarespace 2017b, <i>Simple pricing</i>, Viewed 8 October 2017, <a href="https://www.squarespace.com/pricing/" target="_blank">&lt;https://www.squarespace.com/pricing/&gt;</a>.<br>
+                    W3Techs 2017a, <i>Historical trends in the usage of content management systems for websites</i>, Viewed 8 October 2017, <a href="https://w3techs.com/technologies/history_overview/content_management/all/" target="_blank">&lt;https://w3techs.com/technologies/history_overview/content_management/all/&gt;</a>.<br>
+                    W3Techs 2017b, <i>Market share trends for content management systems for websites</i>, Viewed 8 October 2017, <a href="https://w3techs.com/technologies/history_overview/content_management" target="_blank">&lt;https://w3techs.com/technologies/history_overview/content_management/&gt;</a>.<br>
+                    Wendel, S 2015, <i>Top 10 websites built with Drupal</i>, Viewed 8 October 2017, <a href="https://www.vardot.com/blog/top-10-websites-built-drupal/" target="_blank">&lt;https://www.vardot.com/blog/top-10-websites-built-drupal/&gt;</a>.<br>
+                    WinningWP 2016, <i>40+ stunning examples of real-life websites using Wix</i>, Viewed 8 October 2017, <a href="https://winningwp.com/examples-of-websites-using-wix/" target="_blank">&lt;https://winningwp.com/examples-of-websites-using-wix/&gt;</a>.<br>
+                    Wix.com 2017, <i>Premium plans & features</i>, Viewed 8 October 2017, <a href="http://www.wix.com/upgrade/website/" target="_blank">&lt;http://www.wix.com/upgrade/website&gt;</a>.<br>
+                </div>
+            </div>
             <div class="blog">
                 <h2>Which web server should you choose – IIS or Apache?</h2>
+                <p class="blogDetail">Author: Jennifer Doherty<br>Date: 18 August 2017</p>
                 <p>
                     If you want your business to have a presence on the Internet, at some point you will need to decide on a "technology stack". The "stack" is the combination of software and programming languages you choose to create your application or website (Edelman 2017). In many cases, what you choose for one layer of your stack will affect your choice in other layers. Your choices in your stack may have long-lasting ramifications for many areas of your business, so it's important to get these decision right and to make them as early as possible – preferably with help from professionals. That's why we're here to help!
                 </p>
@@ -110,7 +232,7 @@
                     Apache has traditionally been considered more secure than IIS, as IIS is a Microsoft product and Microsoft products are high priority targets for malware (Monroe 2010). However, Apache's popularity has resulted in more malware specifically targeting it (Constantin 2013).
                 </p>
                 <p>
-                    One of the biggest pros for Apache is cost: as an open-source project, Apache is free, and can run on open-source operating systems such as Linux or Unix (which are also free). We'll look a bit further into cost comparisons in the Cost (LINK) section below.
+                    One of the biggest pros for Apache is cost: as an open-source project, Apache is free, and can run on open-source operating systems such as Linux or Unix (which are also free). We'll look a bit further into cost comparisons in the Cost section below.
                 </p>
                 <p>
                     Apache's open-source nature means it is also very flexible and configurable – with the resulting caveat that it can be difficult to configure for beginners. However, open-source means that there is a very large, broad community of contributors who can respond quickly to fix vulnerabilities, and provide community support.
@@ -130,14 +252,14 @@
                     IIS is closely tied to Windows and can't run on any operating system other than Windows (Monroe 2010), which reduces its flexibility. However, its ties to Microsoft mean that it supports Microsoft's .NET framework and ASPX scripting (Lunarpages 2014). However, .NET support can also be achieved within Apache via the Mono Project (Mono 2017).
                 </p>
                 <p>
-                    While IIS itself is free, its tie to Windows means that choosing IIS means paying for Windows licensing in some fashion. More on this in the Cost (LINK) section below.
+                    While IIS itself is free, its tie to Windows means that choosing IIS means paying for Windows licensing in some fashion. More on this in the Cost section below.
                 </p>
                 <p>
                     IIS 10 is the latest version and is included with Windows Server 2016 and Windows 10. IIS 7.5 was included with Windows Server 2008 R2 and Windows 7. IIS 8.5 was included with Windows Server 2012 R2 and Windows 8.1. Because IIS is considered a component of the Windows Server and Windows major products, its follows its parent product's support lifecycle (Microsoft 2017a). This means that IIS 7.5 is now in its "extended support" phase (Microsoft 2017b), which essentially means it is now EOL. This will also happen for IIS 8.5 within the next 12 months or so (Microsoft 2017c). If you're considering IIS, it's recommended you choose IIS 10 on Windows Server 2016.
                 </p>
                 <h3>Another alternative: NGINX</h3>
                 <p>
-                    NGINX is another open-source option which is used by some of the busiest sites on the Internet, such as Netflix, WordPress, Pinterest, and others (NGINX 2017). It was specifically designed to use asynchronous and lightweight architecture to address the problem of very high simultaneous connections, which plagues Apache. This has seen its market share steadily rise, as seen in the Market share (LINK) section above.
+                    NGINX is another open-source option which is used by some of the busiest sites on the Internet, such as Netflix, WordPress, Pinterest, and others (NGINX 2017). It was specifically designed to use asynchronous and lightweight architecture to address the problem of very high simultaneous connections, which plagues Apache. This has seen its market share steadily rise, as seen in the Market share section above.
                 </p>
                 <p>
                     However, NGINX is still a specialised option and is not usually offered by generalist web hosting companies such as GoDaddy (GoDaddy 2017).
