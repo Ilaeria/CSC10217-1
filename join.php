@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--** Code provided by tutor and adapted by Jennifer Doherty **-->
 <html lang="en">
 <head>
     <title>Edge of Tomorrow DVD Rentals - Home</title>

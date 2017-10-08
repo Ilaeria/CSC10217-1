@@ -224,6 +224,32 @@ fieldset > div:last-child {
     margin-bottom:0;
 }
 
+fieldset legend {
+    font-weight: bold;
+    border-left: 5px solid #FF5252;
+}
+
+.movieHeading {
+    font-weight: bold;
+}
+
+#movieRentalPeriod {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#moviezone_nav ul, #moviezone_nav li, #moviezone_nav a {
+    display: inline-block;
+}
+
+#moviezone_nav a {
+    background-color: #BDBDBD;
+    color: #212121;
+    border: 1px solid #FFFFFF;
+    padding: 1px;
+    text-decoration: none;
+}
+
 input[type=radio], input[type=checkbox] {
     display: inline;
     margin-left: 160px;
@@ -232,7 +258,7 @@ input[type=radio], input[type=checkbox] {
 input[type=submit], input[type=reset] {
     background-color: #BDBDBD;
     color: #212121;
-    border:1px solid #455A64;
+    border: 1px solid #455A64;
     font-size: 1.2em;
     display: inline;
 }
